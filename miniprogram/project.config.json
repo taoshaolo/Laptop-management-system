@@ -1,0 +1,100 @@
+{
+  "miniprogramRoot": "miniprogramRoot/",
+  "cloudfunctionRoot": "allCloudFunctions/",
+  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "lazyloadPlaceholderEnable": false,
+    "uglifyFileName": false,
+    "enhance": true,
+    "useMultiFrameRuntime": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "useStaticServer": true,
+    "showES6CompileOption": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "minifyWXML": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.11.0",
+  "appid": "wx33a198c2646b55f8",
+  "projectname": "%E7%94%B5%E8%84%91%E5%9E%8B%E5%8F%B7%E7%AE%A1%E7%90%86",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/typeList/typeList",
+          "pathName": "pages/typeList/typeList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/typeInfo/typeInfo",
+          "pathName": "pages/typeInfo/typeInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/editTypeInfo/editTypeInfo",
+          "pathName": "pages/editTypeInfo/editTypeInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/about/about",
+          "pathName": "pages/about/about",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/appInfo/appInfo",
+          "pathName": "pages/appInfo/appInfo",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "srcMiniprogramRoot": "miniprogramRoot/",
+  "editorSetting": {
+    "tabIndent": "auto",
+    "tabSize": 2
+  }
+}

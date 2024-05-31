@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="img">
+		<image src="{{avatarUrl}}" />
+    <text class="nickName">{{nickName}}</text>
+		<button bindtap="getUserInfo" type="primary">微信登录</button>
+	</view>
+	<view class="account_wrap">
+		<view>账号:</view>
+		<input bindblur="getAccount" type="text" placeholder="请输入账号" placeholder-style="color:#E7E3D7;"/>
+	</view>
+	<view  class="password_wrap">
+		<view>密码:</view>
+		<input bindblur="getPassword" type="{{ispassword?'password':'text'}}" placeholder="请输入密码" placeholder-style="color:#E7E3D7;"/>
+    <view class="show_password" bindtap="changesEye" style="background-image:url('{{ispassword?'../../images/eyeClose2x.png':'../../images/eyeOpen2x.png'}}');"></view>
+	</view>
+<button bindtap="login">账号密码登录</button>
+<button bindtap="register">注册</button>
+</view>
+
+

@@ -1,0 +1,72 @@
+/* pages/search/search.wxss */
+.search_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    box-sizing: border-box;
+    margin: 30rpx auto;
+}
+.search_wrap .found_by_id,
+.search_wrap .found_by_name{
+    width: 120rpx;
+    height: 80rpx;
+    border: 2rpx #F899F5 solid;
+    font-size: 20rpx;
+    box-sizing: border-box;
+    line-height: 80rpx;
+    text-align: center;
+}
+.search_wrap .found_by_id{
+    border-radius: 25rpx 0rpx 0rpx 25rpx;
+}
+.search_wrap .found_by_name{
+    border-radius: 0rpx 25rpx 25rpx 0rpx;
+}
+.found_active{
+    background-color: #F899F5;
+    color: #FFF;
+}
+.search_body_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 80rpx;
+    box-sizing: border-box;
+    border: 2rpx #F899F5 solid;
+    margin-left: 25rpx;
+    border-radius: 25rpx;
+    padding-left: 15rpx;
+}
+.search_wrap .search_body_wrap image{
+    width: 26rpx;
+    height: 28rpx;
+}
+.search_body_wrap input{
+    flex: 1;
+    padding-left: 15rpx;
+}
+.search_body_wrap .search_button{
+    width: 120rpx;
+    height: 80rpx;
+    border-radius: 0rpx 25rpx 25rpx 0rpx;
+    background-color: #F899F5;
+    color: #FFF;
+    text-align: center;
+    line-height: 80rpx;
+    margin-right: -2rpx;
+}
+.noFound{
+    width: 100vw;
+    margin-top: 100rpx;
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 80rpx;
+    color: #999;
+}
+.noFound image{
+    display: block;
+    width: 300rpx;
+    margin: auto;
+}

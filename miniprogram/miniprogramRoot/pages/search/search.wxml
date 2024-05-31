@@ -1,0 +1,20 @@
+	<view class="search_wrap">
+		<view class="found_by_id {{isByID?'found_active':''}}"  bindtap="searchByID">按ID查询</view>
+		<view class="found_by_name {{isByID?'':'found_active'}}" bindtap="searchByName">按名称查询</view>
+		<view class="search_body_wrap">
+			<image src="../../images/search2x.png" mode="aspectFit" lazy-load="false" />
+			<input type="text" placeholder="请输入查询" bindblur="getsearchvalue" value="{{searchValue}}" />
+			<view class="search_button" bindtap="search" >搜索</view>
+		</view>
+	</view>
+
+<block wx:for="{{ComputerTypeList}}" wx:key="computerId">
+	<computerList computerItems="{{item}}" />
+</block>
+<view class="noFound" wx:if="{{isnofound}}">
+<image src="../../images/nodata.png" mode="aspectFit" lazy-load="false" >
+	
+</image>
+	<view>一天天的没正经，啥也不是</view>
+</view>
+

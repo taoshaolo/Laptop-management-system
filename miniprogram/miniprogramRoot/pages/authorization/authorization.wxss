@@ -1,0 +1,15 @@
+/* pages/authorization/authorization.wxss */
+.img{
+    margin-top: 150rpx;
+}
+.img image{
+    display: block;
+    width: 400rpx;
+    margin: auto;
+}
+.contener button{
+    background-color: #F899F5;
+    color: #FFF;
+    font-size: 32rpx;
+    border-radius: 50rpx;
+}

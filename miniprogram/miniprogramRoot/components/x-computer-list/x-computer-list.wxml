@@ -1,0 +1,29 @@
+<!--components/x-computer-list/x-computer-list.wxml-->
+<view class="list_wrap">
+	<movable-area class="item_movable_wrap">
+		<movable-view
+		 x="{{isOpen?'-280rpx':'0rpx'}}"
+		 direction="horizontal"
+		 friction="100"
+		 damping="100"
+		 out-of-bounds="{{true}}"
+         bindtouchstart="handlerstart"
+         bindtouchend="handlerend"
+		>
+			<view class="item_wrap">
+				<view class="img_wrap">
+					<image src="{{fristSrc}}" mode="aspectFit" lazy-load="false" />
+				</view>
+				<view class="text_wrap">
+					<view>电脑编号：{{computerItems.computerId}}</view>
+					<view>名称：{{computerItems.name}}</view>
+					<view>单价：{{computerItems.prices}}¥</view>
+				</view>
+				<view class="link_toInfo_wrap" id="{{computerItems.computerId}}" bindtap="showInfo" >查看详情</view>
+			</view>
+		</movable-view>
+	</movable-area>
+	<view class="change_type_button" id="{{computerItems.computerId}}" bindtap="changeType" >修改</view>
+	<view class="delete_type_button" bindtap="deleteType" id="{{computerItems.computerId}}" >删除</view>
+</view>
+

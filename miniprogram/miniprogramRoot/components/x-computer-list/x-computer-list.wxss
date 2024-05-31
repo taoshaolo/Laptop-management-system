@@ -1,0 +1,54 @@
+/* components/x-computer-list/x-computer-list.wxss */
+.list_wrap{
+    display: flex;
+    width: 100vw;
+    height: 190rpx;
+}
+.list_wrap .change_type_button,
+.list_wrap .delete_type_button{
+    width: 140rpx;
+    height: 190rpx;
+    line-height: 190rpx;
+    text-align: center;
+    color: #FFF;
+
+}
+.list_wrap .change_type_button{
+    background-color: #F899F5;
+}
+.list_wrap .delete_type_button{
+    background-color: red;
+}
+.list_wrap .item_movable_wrap{
+    flex: 1;
+    height: 190rpx;
+}
+.list_wrap .item_movable_wrap movable-view{
+    width: 100vw;
+}
+.item_wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 194rpx;
+    background-color: #FBFBFB;
+    font-size: 25rpx;
+}
+.item_wrap .img_wrap image{
+    width: 200rpx;
+    height: 120rpx;
+}
+.item_wrap .text_wrap view{
+    line-height: 45rpx;
+}
+.item_wrap .text_wrap view:last-child{
+    color: #F899F5;
+}
+.item_wrap .link_toInfo_wrap{
+    color: #F899F5;
+    padding-right: 40rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAYAAADQ4S5JAAAABHNCSVQICAgIfAhkiAAAAMVJREFUKFON0jEOgjAUBuD3xKQNNfEGXkF3j+DMEVQuoosHwG7sODijV/AELq7uVgSDzxCDKaQtdO73/y99xZdUEogOPBydoMdBkuTnpI4AeOOhWHUZrC9kkVrigHZAELja/qCCJGmck0pcbQ3Qp80IXG1WYGpjQ3HpBBV8R895iZQy8GedIJNqgwQLAC9gBbtbQbF/TD8ACSLGbC229YjmV9JSeciv+jIbwJZqBPqs7dQGIJlNcirP7Vltfwp/yV7sStXxFxlcZhUwSP8GAAAAAElFTkSuQmCC") no-repeat 100%;
+}

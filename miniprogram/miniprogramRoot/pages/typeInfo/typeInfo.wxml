@@ -1,0 +1,81 @@
+<view class="contenter_wrap">
+	<view class="top_wrap">
+		<swiper
+		 indicator-dots="true"
+		 indicator-color="rgba(0,0,0,.3)"
+		 indicator-active-color="#F899F5"
+		 autoplay="true"
+		 current="0"
+		 interval="3000"
+		 duration="1000"
+		 circular="true"
+		>
+			<block wx:for="{{imgSrc}}" wx:key="index">
+				<swiper-item>
+					<image src="{{item}}" mode="aspectFit" lazy-load="false" />
+				</swiper-item>
+
+			</block>
+		</swiper>
+	</view>
+	<view class="title_wrap">
+		<view>名称：{{computerType.name}}</view>
+		<view class="title_wrap_bottom">
+			<view>电脑ID：{{computerType.computerId}}</view>
+			<view>单价：{{computerType.prices}}¥</view>
+		</view>
+	</view>
+	<view class="line" />
+
+	<view class="show_type">
+		<view class="row">
+			<view>品牌</view>
+			<view>
+				<view>{{computerType.brand}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>型号</view>
+			<view>
+				<view>{{computerType.type}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>主板</view>
+			<view>
+				<view>{{computerType.mainBoard}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>显卡</view>
+			<view>
+				<view>{{computerType.graphicsCard}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>硬盘</view>
+			<view>
+				<view>{{computerType.hardDisk}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>内存</view>
+			<view>
+				<view>{{computerType.internalStorage}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>处理器</view>
+			<view>
+				<view>{{computerType.cpu}}</view>
+			</view>
+		</view>
+		<view class="row">
+			<view>厂商</view>
+			<view>
+				<view>{{computerType.merchant}}</view>
+			</view>
+		</view>
+	</view>
+</view>
+

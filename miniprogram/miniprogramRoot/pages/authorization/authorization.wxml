@@ -1,0 +1,9 @@
+<!--pages/authorization/authorization.wxml-->
+<view class="contener">
+    <view class="img">
+    <image src="../../images/computer2x.png" mode="aspectFit" lazy-load="false">
+        
+    </image>
+    </view>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 管理员登录 </button>
+</view>

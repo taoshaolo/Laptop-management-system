@@ -1,0 +1,21 @@
+<view class="contenter">
+    <view class="top_wrap">
+		<image src="{{avatarUrl}}" />
+        <text class="nickName">{{nickName}}</text>
+    </view>
+    <view class="bottom_wrap">
+        <view bindtap="changesPassword">
+            <image src="../../images/pasword_ico2x.png"></image>
+            <view class="mid_wrap mid_bak">修改密码</view>
+        </view>
+        <view bindtap="showAppinfo" >
+        <image src="../../images/about_ico2x.png"></image>
+            <view class="mid_wrap mid_bak">关于</view>
+        </view>
+        <view>
+        <image src="../../images/version_ico2x.png"></image>
+            <view class="mid_wrap">版本</view>
+            <view>1.0.0</view>
+        </view>
+    </view>
+</view>

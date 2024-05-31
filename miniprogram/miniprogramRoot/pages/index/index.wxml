@@ -1,0 +1,79 @@
+<view class="contener">
+	<view class="top_wrap">
+		<view>欢迎使用笔记本电脑型号管理系统</view>
+		<view class="top_line" />
+		<view class="top_english">welcome to Notebook Model Management System</view>
+	</view>
+	<view class="search_wrap">
+		<view class="found_by_id {{isByID?'found_active':''}}"  bindtap="searchByID">按ID查询</view>
+		<view class="found_by_name {{isByID?'':'found_active'}}" bindtap="searchByName">按名称查询</view>
+		<view class="search_body_wrap">
+			<image src="../../images/search2x.png" mode="aspectFit" lazy-load="false" />
+			<input type="text" placeholder="请输入查询" bindblur="getsearchvalue" value="{{searchValue}}" />
+			<view class="search_button" bindtap="search" >搜索</view>
+		</view>
+	</view>
+	<view class="add_wrap">
+		<view class="add_title_wrap">添加新笔记本电脑</view>
+		<view class="add_content">
+			<view class="item_wrap">
+				<view>电脑ID：</view>
+				<input type="text" value="{{computerId}}" bindblur="getcomputerId" />
+			</view>
+			<view class="item_wrap">
+				<view>名称：</view>
+				<input type="text" value="{{name}}"  bindblur="getname" />
+			</view>
+			<view class="item_wrap">
+				<view>品牌：</view>
+				<input type="text" value="{{brand}}" bindblur="getbrand"/>
+			</view>
+			<view class="item_wrap">
+				<view>型号：</view>
+				<input type="text" value="{{type}}"  bindblur="gettype"/>
+			</view>
+			<view class="item_wrap">
+				<view>单价：</view>
+				<input type="text" value="{{prices}}" bindblur="getprices"/>
+			</view>
+			<view class="item_wrap">
+				<view>主板：</view>
+				<input type="text" value="{{mainBoard}}" bindblur="getmainBoard"/>
+			</view>
+			<view class="item_wrap">
+				<view>显卡：</view>
+				<input type="text" value="{{graphicsCard}}" bindblur="getgraphicsCard"/>
+			</view>
+			<view class="item_wrap">
+				<view>硬盘：</view>
+				<input type="text" value="{{hardDisk}}" bindblur="gethardDisk" />
+			</view>
+			<view class="item_wrap">
+				<view>内存：</view>
+				<input type="text" value="{{internalStorage}}"  bindblur="getinternalStorage"/>
+			</view>
+			<view class="item_wrap">
+				<view>处理器：</view>
+				<input type="text" value="{{cpu}}" bindblur="getcpu"/>
+			</view>
+			<view class="item_wrap">
+				<view>出厂商:</view>
+				<input type="text" value="{{merchant}}" bindblur="getmerchant"/>
+			</view>
+		</view>
+		<view class="uploder_img_wrap">
+			<view>上传图片：</view>
+			<view class="uploder_img">
+				<block wx:for="{{uploder_imgs}}" wx:key="index">
+					<view class="show_img">
+						<image src="{{item}}" mode="aspectFit" lazy-load="false" />
+						<view class="deleta_button" id="{{index}}" bindtap="deletaimg"/>
+					</view>
+				</block>
+                <view class="add_img_button" bindtap="chooseImg" ></view>
+			</view>
+		</view>
+        <view class="add_computer_info" bindtap="addComputer" >添加新电脑型号</view>
+	</view>
+</view>
+

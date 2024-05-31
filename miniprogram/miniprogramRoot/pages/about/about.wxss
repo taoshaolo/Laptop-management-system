@@ -1,0 +1,41 @@
+/* pages/about/about.wxss */
+.top_wrap{
+    background-color: #F899F5;
+    color: #FFF;
+    text-align: center;
+    line-height: 100rpx;
+    width: 100vw;
+    height: 400rpx;
+    padding-top: 60rpx;
+  }
+  .top_wrap image{
+    display: block;
+    width: 250rpx;
+    height: 250rpx;
+    margin: auto;
+    border-radius: 50%;
+    border: 2rpx #F899F5 solid;
+  }
+.bottom_wrap{
+    margin-top: 30rpx;
+}
+.bottom_wrap>view{
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-top: 15rpx;
+}
+.bottom_wrap image{
+    display: block;
+    margin: 0rpx 20rpx 0rpx 40rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.bottom_wrap .mid_wrap{
+    flex: 0.9;
+}
+.bottom_wrap .mid_wrap.mid_bak{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAYAAADQ4S5JAAAABHNCSVQICAgIfAhkiAAAAL5JREFUKFON0jESgjAQBdC/lDbewCsYdkuPYM0R9CbaeAI7eiys1SuYSW9ja0/HsHEoYIAhgdR5/+9kQ8x8VdWbc+6JBYdEZAXg7r3/WmuPc4baC8x8IKJLXddZrK0DDRSRNYAi1jYAS9omQawtCKbaqqp6z4IGGmN2SZI8VNXMAmY+AdiralaW5S8I0jTdElEBILfWntsRQ6/UpTrnPv1lDkAodRL0Zx2nDoCIbLz3r/GsoT9FTbKq5rHUPv4D4A9v0kJR7yIAAAAASUVORK5CYII=") no-repeat right;
+}

@@ -1,0 +1,22 @@
+/* miniprogramRoot/pages/aboutinfo/aboutinfo.wxss */
+.aboutinfo{
+    margin: 30rpx 50rpx;
+}
+.aboutinfo .aboutinfotitle{
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #F899F5;
+    width: 50vw;
+    margin: 10rpx auto;
+    text-align: center;
+}
+.aboutinfo .content .title{
+    margin-top: 30rpx;
+    font-size: 35rpx;
+    font-weight: bold;
+    color: #F899F5;
+}
+.aboutinfo .content .contentinfo{
+    font-size: 30rpx;
+    line-height: 50rpx;
+}

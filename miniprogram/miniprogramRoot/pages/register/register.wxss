@@ -1,0 +1,57 @@
+/* pages/register/register.wxss */
+.container{
+    margin-top: 150rpx;
+}
+.title{
+    color: #F899F5;
+    font-size: 60rpx;
+    margin-bottom: 50rpx;
+    text-align: center;
+}
+.account_wrap,
+.password_wrap{
+  display: flex;
+  align-items: flex-end;
+  color: #F899F5;
+  font-size: 32rpx;
+  width: 70vw;
+  margin: auto;
+}
+.account_wrap view,
+.password_wrap view{
+  margin-top: 60rpx;
+}
+.account_wrap input,
+.password_wrap input{
+  flex: 1;
+  border-bottom: 2rpx #F899F5 solid;
+  margin-left: 25rpx;
+}
+.password_wrap .show_password{
+  width: 50rpx;
+  height: 50rpx;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.container button{
+  background-color: #F899F5;
+  color: white;
+  font-size: 32rpx;
+  margin-top: 100rpx;
+  border-radius: 20rpx;
+}
+.img{
+  margin-top: 120rpx;
+  color: #F899F5;
+  text-align: center;
+  line-height: 100rpx;
+}
+.img image{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+  margin: auto;
+  border-radius: 50%;
+  border: 2rpx #F899F5 solid;
+}

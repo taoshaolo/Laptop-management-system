@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "computerList":"../../components/x-computer-list/x-computer-list"
+  },
+  "enablePullDownRefresh":true,
+  "backgroundColor":"#F899F5",
+  "backgroundTextStyle":"light"
+}

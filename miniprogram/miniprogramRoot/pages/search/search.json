@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "computerList":"../../components/x-computer-list/x-computer-list"
+  }
+}

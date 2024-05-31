@@ -1,0 +1,5 @@
+/* pages/typeList/typeList.wxss */
+computerList{
+    display: block;
+    margin-bottom: 15rpx;
+}

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/authorization/authorization",
+    "pages/about/about",
+    "pages/typeList/typeList",
+    "pages/typeInfo/typeInfo",
+    "pages/editTypeInfo/editTypeInfo",
+    "pages/appInfo/appInfo",
+    "pages/changePassword/changePassword",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F899F5",
+    "navigationBarTitleText": "笔记本型号管理",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#F899F5",
+    "color": "#999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home2x.png",
+        "selectedIconPath": "images/home_sc2x.png"
+      },
+      {
+        "pagePath": "pages/typeList/typeList",
+        "text": "型号",
+        "iconPath": "images/type2x.png",
+        "selectedIconPath": "images/type_sc2x.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/about2x.png",
+        "selectedIconPath": "images/about_sc2x.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

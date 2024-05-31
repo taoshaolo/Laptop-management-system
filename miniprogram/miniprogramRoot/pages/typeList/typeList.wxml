@@ -1,0 +1,4 @@
+<!--pages/typeList/typeList.wxml-->
+<block wx:for="{{ComputerTypeList}}" wx:key="computerId">
+    <computerList computerItems="{{item}}" bindcustomevent="fresh"></computerList>
+</block>
